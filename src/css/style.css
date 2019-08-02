@@ -1,6 +1,22 @@
-@charset "UTF-8";
+@font-face {
+  font-family: 'Museo Sans Light';
+  src: url("../fonts/MuseoSansCyrl/MuseoSansCyrl-300.eot");
+  src: url("../fonts/MuseiSansCurl/MuseoSansCyrl-300.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-300.woff") format("woff"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-300.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Museo Sans Bold';
+  src: url("../fonts/MuseoSansCyrl/MuseoSansCyrl-700.eot");
+  src: url("../fonts/MuseiSansCurl/MuseoSansCyrl-700.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-700.woff") format("woff"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-700.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
-  font-family: sans-serif;
+  font-family: 'Museo Sans Light' , sans-serif;
+  font-weight: 300;
 }
 
 img {
@@ -32,7 +48,6 @@ img {
   padding: 18px 30px;
 }
 
-/*импорт стиля шапки*/
 .navbar {
   padding: 8px 0;
 }
@@ -76,7 +91,8 @@ img {
   color: #333333;
   text-decoration: none;
   font-size: 20px;
-  font-weight: 400;
+  font-family: 'Museo Sans Bold' , sans-serif;
+  font-weight: 700;
 }
 
 @media (max-width: 768px) {
@@ -113,6 +129,9 @@ img {
   font-weight: 800;
   line-height: 55px;
   margin-bottom: 30px;
+  font-family: 'Museo Sans Light';
+  font-family: 'Museo Sans Bold' , sans-serif;
+  font-weight: 700;
 }
 
 .hero-text__subtitle {
@@ -192,6 +211,9 @@ img {
   }
   .hero-list__image {
     margin-right: 15px;
+  }
+  .container {
+    max-width: 540px;
   }
 }
 /*# sourceMappingURL=style.css.map */
