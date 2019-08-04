@@ -1,10 +1,11 @@
 .hero
     padding: 50px 0px
+    background-color: #f5f5f5
     &-block
         display: flex
     &-text
         flex-basis: 50%
-        padding-right: 140px
+        padding-right: 43px
         &__title
             font-size: 41px
             font-weight: 800
@@ -66,3 +67,30 @@
                 margin-right: 15px
     .container
         max-width: 540px
+
+@media (max-width: 320px) 
+    .container
+        max-width: auto
+    .hero-text
+        padding-left: 3px
+    .hero-text__title
+        margin-bottom: 7px
+        font-size: 24px
+    .hero-text__subtitle
+        color: #333333
+        font-size: 16px
+        font-weight: 400
+        +bold
+    .hero-list__text
+        max-width: 199px
+        color: #333333
+        font-size: 12px
+        font-weight: 400
+        line-height: 1.15em
+    .hero
+        padding-top: 28px
+    
+
+
+
+
