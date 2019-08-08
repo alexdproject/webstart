@@ -49,15 +49,25 @@ img {
   background-color: #ffd200;
   border: none;
   padding: 18px 30px;
+  outline: none;
 }
 
 .button:hover {
   background-color: #ffdb33;
   cursor: pointer;
+  outline: none;
+}
+
+.button:active {
+  outline: none;
+}
+
+.button:focus {
+  outline: none;
 }
 
 .section {
-  padding: 90px 0;
+  padding: 47px 0;
 }
 
 .section-title {
@@ -79,6 +89,7 @@ img {
 }
 
 .navbar {
+  outline: none;
   padding: 8px 0;
 }
 
@@ -124,7 +135,22 @@ img {
   font-weight: 700;
 }
 
-.navbar__telephone {
+button:hover {
+  background-color: #ffdb33;
+  cursor: pointer;
+  outline: none;
+}
+
+button:active {
+  background-color: red;
+  outline: none;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:focus__telephone {
   display: inline-block;
   margin-top: 10px;
   color: #333333;
@@ -313,6 +339,11 @@ img {
 }
 
 /* добавляем стиль для офер блока */
+strong {
+  font-family: 'Museo Sans Bold' , sans-serif;
+  font-weight: 700;
+}
+
 .offer {
   background: url("../img/room_offer.png") no-repeat;
   background-position: center right;
@@ -345,6 +376,7 @@ img {
 .offer__subtitle {
   max-width: 250px;
   margin-bottom: 30px;
+  display: block;
 }
 
 .offer__input {
@@ -363,6 +395,27 @@ img {
   min-height: 70px;
 }
 
+.offer-hint {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  line-height: 24px;
+  padding-top: 30px;
+  font-size: 15px;
+}
+
+.left-hint {
+  max-width: 314px;
+  margin-right: 40px;
+}
+
+.right-hint {
+  padding-left: 42px;
+}
+
 @media (max-width: 1200px) {
   .offer {
     background-size: cover;
@@ -372,8 +425,21 @@ img {
     margin-bottom: 10px;
   }
   .offer__button {
-    font-size: 13px;
+    font-size: 12px;
   }
+  .offer-hint {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  max-width: 314px;
+  margin-right: 40px;
+}
+
+.right-hint {
+  padding-left: 0;
+  margin-top: 15px;
 }
 
 @media (max-width: 768px) {
@@ -383,6 +449,37 @@ img {
   .offer-block {
     width: 100%;
     padding-right: 0;
+  }
+}
+
+@media (max-width: 320px) {
+  .offer {
+    background: #ffffff;
+  }
+  .offer-block {
+    width: 100%;
+    padding-right: 0;
+  }
+  .offer__title {
+    font-size: 18px;
+    line-height: 20px;
+    margin-top: -25px;
+    font-family: 'Museo Sans Bold' , sans-serif;
+    font-weight: 700;
+  }
+  .offer__button {
+    font-size: 15px;
+    padding-left: 40px;
+    padding-left: 40px;
+  }
+  .left-hint {
+    max-width: 250px;
+    margin-right: 60px;
+  }
+  .right-hint {
+    max-width: 200px;
+    padding-left: 0;
+    margin-top: 15px;
   }
 }
 /*# sourceMappingURL=style.css.map */
