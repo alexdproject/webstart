@@ -23,7 +23,7 @@
                         <a href="tel:+7(495)42-251-31" class="navbar__telephone">+7 (495) 42-251-31</a>
                     </div>
                     <!-- /.navbar__contacts -->
-                <button class="button navbar__button">Перезвоните мне</button>
+                <button class="button navbar__button" id="button" >Перезвоните мне</button>
                 </div>
                 <!-- /.navbar__info -->
             </div> <!-- navbar-block -->
@@ -87,8 +87,7 @@
             <div class="offer-hint">
                 <span class="offer__hint left-hint">Наш менеджер перезвонит Вам
                     в течение 60 секунд</span>
-                    <span class="offer__hint right-hint">или перезвоните нам сами
-                        <strong>+7 (495) 42-251-31</strong></span> 
+                    <span class="offer__hint right-hint">или перезвоните нам сами<strong> +7 (495) 42-251-31</strong></span> 
             </div>
         </div> <!-- /.offer-block -->
     </div><!-- /.container -->
@@ -96,8 +95,14 @@
 
 </main>
 
-
-
+<div class="modal" id="modal">
+    <div class="modal-dialog">
+        <button class="modal-dialog__close" id="close">&times;</button>
+        <h4 class="modal-dialog__title">Текст модального окна</h4>
+    </div>
+</div>
+<!--Модальное окно-->
+<script src="js/main.js"></script>
 
 </body>
 </html>
