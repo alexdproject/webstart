@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- !!!!21!!! -->
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/animate.css"></link>
     <link rel="stylesheet" href="sass/style.sass">
 </head>
 <body>
@@ -118,6 +120,80 @@
     <!-- /.container -->
 </section>
 <!-- /.section portfolio -->
+
+
+<section class="section price">
+    <div class="container">
+        <h2 class="section-title price__title">У нас очень гибкая система скидок на комплексные работы!</h2>
+        <span class="section-subtitle price__subtitle">Прайс на наши услуги</span>
+        <div class="cards">
+
+            <div class="card price__card wow fadeInUp" data-wow-delay="0.1s" >
+                <div class="card__image">
+                    <img src="img/bath.png" alt="bath">
+                    <div class="card__text">
+                        <h4 class="card__title">Ремонт ванных комнат и с/у</h4>
+                        <span class=""></span><a href="№" class="card__link">Узнать цены</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card price__card wow fadeInUp" data-wow-delay="0.2s" >
+                <div class="card__image">
+                    <img src="img/living.png" alt="living">
+                    <div class="card__text">
+                        <h4 class="card__title">Ремонт комнат и квартир</h4>
+                        <span class=""></span><a href="№" class="card__link">Узнать цены</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card price__card wow fadeInUp" data-wow-delay="0.3s" >
+                <div class="card__image">
+                    <img src="img/office.png" alt="office">
+                    <div class="card__text">
+                        <h4 class="card__title">Отделка офисных помещений</h4>
+                        <span class=""></span><a href="№" class="card__link">Узнать цены</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card price__card wow fadeInUp" data-wow-delay="0.4s" >
+                <div class="card__image">
+                    <img src="img/new.png" alt="new">
+                    <div class="card__text">
+                        <h4 class="card__title">Ремонт в новостройках</h4>
+                        <span class=""></span><a href="№" class="card__link">Узнать цены</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card price__card wow fadeInUp" data-wow-delay="0.5s" >
+                <div class="card__image">
+                    <img src="img/kitchen.png" alt="kitchen">
+                    <div class="card__text">
+                        <h4 class="card__title">Ремонт кухонь</h4>
+                        <span class=""></span><a href="№" class="card__link">Узнать цены</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card price__card wow fadeInUp" data-wow-delay="0.6s" >
+                <div class="card__image">
+                    <img src="img/mansard.png" alt="mansard">
+                    <div class="card__text">
+                        <h4 class="card__title">Ремонт дач и коттеджей</h4>
+                        <span class=""></span><a href="№" class="card__link">Узнать цены</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+
 </main>
 
 <div class="modal" id="modal">
@@ -131,7 +207,9 @@
 <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 <script src="js/modal.js"></script>
 <script src="js/slick.min.js"></script>
+<script src="js/wow.min.js"></script>
 <script>
+    new WOW().init();
     $(document).ready (function(){
         $('.slider').slick({
             slidesToShow: 3,
